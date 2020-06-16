@@ -1,6 +1,6 @@
 import React from 'react';
 import Badge from "react-bootstrap/Badge";
-let marked = require("marked");
+const marked = require("marked");
 
 
 export default class App extends React.Component{
@@ -31,7 +31,8 @@ render(){
     backgroundColor: "#DCDCDC",
     marginLeft: "auto",
     marginRight: "auto",
-    padding:"10px"
+    padding:"10px",
+    overflow: "scroll"
   };
   return (
     <div className="App">
@@ -76,10 +77,12 @@ render(){
                   </Badge>
                 </h4>
               </div>
-              <div 
-              style={outputStyle}
-              dangerouslySetInnerHTML={{ __html: marked(this.state.markdown) }}>
-              </div>
+              <div
+                style={outputStyle}
+                dangerouslySetInnerHTML={{
+                  __html: marked(this.state.markdown),
+                }}
+              ></div>
             </div>
           </div>
         </div>

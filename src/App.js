@@ -32,7 +32,7 @@ render(){
     marginLeft: "auto",
     marginRight: "auto",
     padding:"10px",
-    overflow: "scroll"
+    overflow: "auto"
   };
   return (
     <div className="App">

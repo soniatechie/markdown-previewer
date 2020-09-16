@@ -69,7 +69,7 @@ render(){
   };
   return (
     <div className="App">
-      <div className="container">
+      <main className="container">
         <div className="row mt-4">
           <div className="col text-center">
             <h1>
@@ -77,6 +77,7 @@ render(){
                 Markdown Previewer
             </Badge>
             </h1>
+            <p>Read this Github guide: <a target="_blank" href="https://guides.github.com/features/mastering-markdown/">Mastering Markdown</a>.</p>
           </div>
         </div>
 
@@ -121,7 +122,7 @@ render(){
               
             </div>
           </div>
-        </div>
+        </main>
     </div>
   );}
 }

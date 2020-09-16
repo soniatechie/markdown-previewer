@@ -70,6 +70,7 @@ render(){
   return (
     <div className="App">
       <main className="container">
+        
         <div className="row mt-4">
           <div className="col text-center">
             <h1>
@@ -77,7 +78,7 @@ render(){
                 Markdown Previewer
             </Badge>
             </h1>
-            <p>Read this Github guide: <a target="_blank" href="https://guides.github.com/features/mastering-markdown/">Mastering Markdown</a>.</p>
+            <p>Read this Github guide: <a target="_blank" rel="noopener noreferrer" href="https://guides.github.com/features/mastering-markdown/">Mastering Markdown</a>.</p>
           </div>
         </div>
 
@@ -111,17 +112,20 @@ render(){
                   </Badge>
                 </h4>
               </div>
+              
               <div style={inputStyle}>
+                
               <div
                 style={outputStyle}
                 dangerouslySetInnerHTML={{
                   __html: marked(this.state.markdown),
                 }}
               ></div>
-              </div>
               
+              </div>
             </div>
           </div>
+          
         </main>
     </div>
   );}
